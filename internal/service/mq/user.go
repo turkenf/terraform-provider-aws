@@ -53,9 +53,6 @@ type resourceUser struct {
 	framework.ResourceWithConfigure
 }
 
-func (r *resourceUser) Metadata(_ context.Context, _ resource.MetadataRequest, response *resource.MetadataResponse) {
-	response.TypeName = "aws_mq_user"
-}
 
 // Schema returns the schema for this resource.
 func (r *resourceUser) Schema(ctx context.Context, request resource.SchemaRequest, response *resource.SchemaResponse) {
